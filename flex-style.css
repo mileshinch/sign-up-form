@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+}
+
+.flex-container {
+    border: 1px solid white;
+    background-color: white;
+    height: 100vh;
+    max-width: 1000px;
+}

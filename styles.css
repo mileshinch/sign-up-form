@@ -1,0 +1,83 @@
+.sign-up-page {
+    display: flex;
+    flex-direction: row;
+    height: 95vh;
+}
+
+div {
+    /* border: solid 2px black; */
+}
+
+.left-hand-side {
+    width: 35%;
+}
+
+.right-hand-side {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.intro-text, .sign-up-form, .button-div {
+  flex: 1 1 0;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+}
+
+.intro-text {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.para-one, .para-two {
+    flex: 1;
+}
+
+.sign-up-form {
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.col-one, .col-two {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0
+}
+
+.user-info {
+    flex: 1 1 0
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.button-div {
+    /* display: inline-block; */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-card {
+    position: absolute;
+  width: 35%;
+  height: 10%;
+  background: black;
+  opacity: 0.6;
+  color: white;
+  top: 20%;
+}
+
+.title {
+    position: absolute;
+}
