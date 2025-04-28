@@ -1,25 +1,68 @@
-.sign-up-page {
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    background: black;
     display: flex;
-    flex-direction: row;
-    height: 95vh;
-}
+    justify-content: center;
+    align-items: center;
+  }
+  /* simple solution*/
+  .main-div {
+    background: white;
+    width: min(100vw, 100vh * (1.35));
+    height: min(100vh, 100vw * (1/1.35));
+    display: flex;
+    }
 
-div {
-    /* border: solid 2px black; */
+.lhs {
+    border-right: 1px solid black;
+    width: 40%;
+    min-width: 200px;
 }
-
-.left-hand-side {
-    width: 35%;
-}
-
-.right-hand-side {
+.rhs {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     flex: 1;
 }
 
-.intro-text, .sign-up-form, .button-div {
-  flex: 1 1 0;
+.middle {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.top, .bottom {
+    height: 35%;
+}
+
+.middle {
+    height: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    height: 100%;
+    flex: 1;
+    font-size: 14px;
+}
+
+.col-one, .col-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    /* height: 100%; */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .image {
@@ -27,57 +70,74 @@ div {
     width: 100%;
 }
 
-.intro-text {
-    font-size: 20px;
-    font-weight: 700;
-    padding: 30px;
+.bottom {
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
 }
 
-.para-one, .para-two {
-    flex: 1;
+button {
+    width: 160px;
+    height: 40px;
+    background-color: #596D48;
+    color: white;
 }
 
-.sign-up-form {
-    /* display: flex;
-    flex-direction: row; */
-}
-
-.col-one, .col-two {
+.top {
     display: flex;
     flex-direction: column;
-    flex: 1 1 0
+    justify-content: flex-end;
+    padding-bottom: 30px;
 }
 
-.user-info {
-    flex: 1 1 0
+.top, .bottom {
+    background-color: #FAF9F6;
 }
 
-.form {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
+.top, .middle, .bottom {
+    padding-left: 5%;
 }
 
-.button-div {
-    /* display: inline-block; */
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.para-one {
+    width: 75%;
 }
 
 .title-card {
     position: absolute;
-  width: 35%;
-  height: 10%;
+  width: 30%;
+  height: 15%;
   background: black;
-  opacity: 0.6;
+  opacity: 0.5;
   color: white;
   top: 20%;
+  font-size: 28px;
 }
 
-.title {
-    position: absolute;
+.title-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
+
+.odin {
+    height: 100%;
+}
+
+input {
+    border-color: #E5E7EB;
+}
+
+input:valid {
+    border-color: green;
+  }
+
+input:invalid {
+    border-color: red;
+  }
+
+  input:focus {
+    border: blue;
+  }
