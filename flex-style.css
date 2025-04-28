@@ -80,6 +80,9 @@ html, body {
 
 button {
     width: 160px;
+    height: 40px;
+    background-color: #596D48;
+    color: white;
 }
 
 .top {
@@ -122,3 +125,19 @@ button {
 .odin {
     height: 100%;
 }
+
+input {
+    border-color: #E5E7EB;
+}
+
+input:valid {
+    border-color: green;
+  }
+
+input:invalid {
+    border-color: red;
+  }
+
+  input:focus {
+    border: blue;
+  }

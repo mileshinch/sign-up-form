@@ -27,40 +27,42 @@
                 </div>
             </div>
             <div class="middle">
-                <form class="form" action="">
+                <form class="form" action="" method="post" id="myForm">
                     <div class="col-one">
                         <div class="first-name user-info">
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="user-first-name">
+                            <input type="text" id="first-name" name="user-first-name" placeholder="John" required maxlength="20" minlength="1">
                         </div>
                         <div class="email user-info">
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="user-email">
+                            <input type="email" id="email" name="user-email" required placeholder="john.smith@gmail.com">
                         </div>
                         <div class="password user-info">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="user-password">
+                            <input type="password" id="password" name="user-password" required minlength="6" maxlength="14">
                         </div>
                     </div>
                     <div class="col-two">
                         <div class="last-name user-info">
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="user-last-name">
+                            <input type="text" id="last-name" name="user-last-name" required maxlength="20" minlength="1" placeholder="Smith">
                         </div>
                         <div class="phone-number user-info">
                             <label for="phone-number">PHONE NUMBER</label>
-                            <input type="number" id="phone-number" name="user-phone-number">
+                            <input type="number" id="phone-number" name="user-phone-number" required minlength="11" maxlength="11" placeholder="07732168999"
+                            title="Please enter a valid zip code, example: 65251" >
                         </div>
                         <div class="confirm-password user-info">
                             <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password" name="user-password">
+                            <input type="password" id="confirm-password" name="user-password" required>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="bottom">
-                <button type="submit">Create Account</button>
-                <span>Already have an account? Log in</span>
+                <button type="submit" form="myForm">Create Account</button>
+                <span>Already have an account? <a href="">Log in</a></span>
+                
             </div>
         </div>
     </div>
